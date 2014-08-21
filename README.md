@@ -1,5 +1,4 @@
 Web Application Architecture I @ Coursera
 ===========================================
-Homework 1
-blog skeleton created using rails generator. 
+Homework 1 : blog skeleton created using rails generator. 
 
