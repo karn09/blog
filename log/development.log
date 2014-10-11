@@ -2035,3 +2035,315 @@ Processing by PostsController#edit as HTML
   Rendered posts/_form.html.erb (6.1ms)
   Rendered posts/edit.html.erb within layouts/application (7.7ms)
 Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 18:35:34 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/jnieves/.rvm/gems/ruby-2.1.3/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (8.0ms)
+Completed 200 OK in 61ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-11 18:35:40 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 287ms (Views: 245.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-10-11 18:35:40 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-10-11 18:35:40 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-11 18:35:40 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-11 18:35:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 18:35:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 18:35:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 18:35:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 18:35:40 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-11 18:35:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 18:35:40 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-10-11 18:35:45 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-11 18:35:45 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-10-11 18:35:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 18:35:45 -0400
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-11 18:35:51 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (151.2ms)
+Completed 200 OK in 182ms (Views: 159.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-11 18:36:02 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-11 18:36:22 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-10-11 18:36:22 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-10-11 18:36:22 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-11 18:36:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 18:36:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 18:36:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 18:36:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 18:36:23 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-11 18:36:23 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-11 18:36:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 18:36:23 -0400
+
+
+Started POST "/posts/1/comments" for 127.0.0.1 at 2014-10-11 18:36:38 -0400
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "comment"=>{"body"=>"test"}, "commit"=>"Add Comment", "post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "comments" ("body", "created_at", "post_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "test"], ["created_at", "2014-10-11 22:36:38.651229"], ["post_id", 1], ["updated_at", "2014-10-11 22:36:38.651229"]]
+  [1m[35m (132.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 160ms
+
+ActionView::MissingTemplate (Missing template comments/create, application/create with {:locale=>[:en], :formats=>[:js, :html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/jnieves/JavaScript/Coursera/blog/app/views"
+):
+  app/controllers/comments_controller.rb:30:in `create'
+
+
+  Rendered /home/jnieves/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.5ms)
+
+
+Started POST "/posts/1/comments" for 127.0.0.1 at 2014-10-11 18:36:51 -0400
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "comment"=>{"body"=>"test"}, "commit"=>"Add Comment", "post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "comments" ("body", "created_at", "post_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "test"], ["created_at", "2014-10-11 22:36:51.411478"], ["post_id", 1], ["updated_at", "2014-10-11 22:36:51.411478"]]
+  [1m[35m (239.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 252ms
+
+ActionView::MissingTemplate (Missing template comments/create, application/create with {:locale=>[:en], :formats=>[:js, :html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/jnieves/JavaScript/Coursera/blog/app/views"
+):
+  app/controllers/comments_controller.rb:30:in `create'
+
+
+  Rendered /home/jnieves/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.7ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-11 18:47:15 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 71ms (Views: 51.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-10-11 18:47:16 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-10-11 18:47:16 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-11 18:47:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 18:47:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 18:47:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 18:47:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 18:47:16 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-11 18:47:16 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-11 18:47:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 18:47:16 -0400
+
+
+Started POST "/posts/1/comments" for 127.0.0.1 at 2014-10-11 18:48:00 -0400
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "comment"=>{"body"=>"added using ajax"}, "commit"=>"Add Comment", "post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("body", "created_at", "post_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "added using ajax"], ["created_at", "2014-10-11 22:48:00.881266"], ["post_id", 1], ["updated_at", "2014-10-11 22:48:00.881266"]]
+  [1m[35m (181.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  Rendered comments/_comment.html.erb (1.4ms)
+  Rendered comments/create.js.erb (29.0ms)
+Completed 200 OK in 227ms (Views: 36.4ms | ActiveRecord: 182.3ms)
+
+
+Started POST "/posts/1/comments" for 127.0.0.1 at 2014-10-11 18:50:03 -0400
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "comment"=>{"body"=>"more comments"}, "commit"=>"Add Comment", "post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "comments" ("body", "created_at", "post_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "more comments"], ["created_at", "2014-10-11 22:50:03.059439"], ["post_id", 1], ["updated_at", "2014-10-11 22:50:03.059439"]]
+  [1m[35m (152.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  Rendered comments/_comment.html.erb (5.6ms)
+  Rendered comments/create.js.erb (7.0ms)
+Completed 200 OK in 172ms (Views: 10.3ms | ActiveRecord: 154.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-11 18:50:06 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 14ms
+
+SyntaxError (/home/jnieves/JavaScript/Coursera/blog/app/views/posts/show.html.erb:15: syntax error, unexpected tLABEL
+...@output_buffer.append=( render: partial => @post.comments.re...
+...                               ^):
+  app/views/posts/show.html.erb:15: syntax error, unexpected tLABEL
+
+
+  Rendered /home/jnieves/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/jnieves/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /home/jnieves/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/jnieves/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-11 18:50:10 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 8ms
+
+SyntaxError (/home/jnieves/JavaScript/Coursera/blog/app/views/posts/show.html.erb:15: syntax error, unexpected tLABEL
+...@output_buffer.append=( render: partial => @post.comments.re...
+...                               ^):
+  app/views/posts/show.html.erb:15: syntax error, unexpected tLABEL
+
+
+  Rendered /home/jnieves/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/jnieves/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/jnieves/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/jnieves/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-11 18:51:17 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (6.2ms)
+  Rendered posts/show.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 33ms (Views: 27.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-10-11 18:51:17 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-11 18:51:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 18:51:17 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-10-11 18:51:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 18:51:17 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-11 18:51:17 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-11 18:51:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 18:51:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 18:51:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 18:51:17 -0400
+
+
+Started POST "/posts/1/comments" for 127.0.0.1 at 2014-10-11 18:51:25 -0400
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "comment"=>{"body"=>"another!\r\n"}, "commit"=>"Add Comment", "post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("body", "created_at", "post_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "another!\r\n"], ["created_at", "2014-10-11 22:51:25.073133"], ["post_id", 1], ["updated_at", "2014-10-11 22:51:25.073133"]]
+  [1m[35m (137.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  Rendered comments/_comment.html.erb (0.7ms)
+  Rendered comments/create.js.erb (2.9ms)
+Completed 200 OK in 152ms (Views: 6.2ms | ActiveRecord: 138.8ms)
